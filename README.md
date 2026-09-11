@@ -1,6 +1,6 @@
 # Myelin Package Manager
 
-Official package repository for **NoExZOS 1.0 (Sovereign)**.
+Official package repository for **NoExZOS 1.0 (Sovereign)**.(NoExZ OS WILL RELEASE IN 13 SEPTEMBER 2026 ITS LINUX BASED LFS(LINUX FROM SCRATCH)
 
 ## Usage
 
