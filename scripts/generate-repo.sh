@@ -1,5 +1,5 @@
 #!/bin/bash
-# generate-repo.sh - Regenerate repodata.txt from packages in x86_64/
+# generate-repo.sh - Regenerate repodata.txt from x86_64/ packages
 
 set -e
 
@@ -21,22 +21,26 @@ count=0
 for pkg in "$REPO_DIR"/*.mypkg.tar.xz; do
     [ -f "$pkg" ] || continue
 
-    filename=$(basewname "$pkg")
-    pkg_info=$(echo "$filename" | sed 's/\.mypkg\.tar\.xz$//')
+    filename=$(basename "$pkg")
+    # Remove .mypkg.tar.xz suffix
+    base="${filename%.mypkg.tar.xz}"
 
-    # Detect arch
-    arch=$(echo "$pkg_info" | grep -oE '(x86_64|aarch64|i686|armv7h)' | head -1)
+    # Detect arch suffix: x86_64, aarch64, i686
+    arch=""
+    for a in x86_64 aarch64 i686 armv7h; do
+        case "$base" in
+            *"-$a") arch="$a"; base="${base%-$a}"; break ;;
+        esac
+    done
     [ -z "$arch" ] && arch="x86_64"
 
-    # Strip arch suffix
-    name_ver_rev=$(echo "$pkg_info" | sed "s/[-.]${arch}$//")
+    # base now: name-version (e.g., "hello-2.12.3")
+    # Extract name (before first digit-dot pattern)
+    name=$(echo "$base" | sed -E 's/-[0-9][0-9.]*.*$//')
+    version_part=$(echo "$base" | sed "s/^${name}-//")
 
-    # Extract name (everything before first digit that starts a version)
-    name=$(echo "$name_ver_rev" | sed 's/-[0-9][0-9.]*.*$//')
-    version_part=$(echo "$name_ver_rev" | sed "s/^${name}-//")
-
-    # Version-Rev format: 2.12.3 or 2.12.3-2
-    if [[ "$version_part" == *-* ]]; then
+    # Add -1 revision if not present
+    if echo "$version_part" | grep -q -- '-'; then
         version="$version_part"
     else
         version="${version_part}-1"
