@@ -1,7 +1,8 @@
 # NoExZOS Repository
-# Generated: Fri Sep 11 08:02:01 AM PDT 2026
+# Generated: Fri Sep 11 08:07:55 AM PDT 2026
 # Format: <name>-<version>-<rev> <arch> <url> <sha256>
 
+curl-8.15.0-py x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/curl-8.15.0-py-x86_64.mypkg.tar.xz 71ea3065d5bef37b7f068cadc8f853292eb5d3d0435a1c59218c296e3eba0d2a
 file-5.48-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/file-5.48-x86_64.mypkg.tar.xz 5a96e03b6633d0ca4f2f6d3ea7c9789c0acc82a607066920a94697d8784212e1
 grep-3.12-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/grep-3.12-x86_64.mypkg.tar.xz c9921445b272d4d87a572ea9cc87b7a080c989ce7e88c4b58910fab04cbbf970
 hello-2.12.3-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/hello-2.12.3-x86_64.mypkg.tar.xz 1542edacbbeca3a84c00947f5954d8d402a8acdc85a32c6884c395237343f77a
@@ -12,4 +13,4 @@ sed-4.10-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-m
 tree-2.1.1-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/tree-2.1.1-x86_64.mypkg.tar.xz 046dba64d085cc354b133f4f5e0902fbc0c33b215e36b19068242a3f49811c20
 which-2.21-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/which-2.21-x86_64.mypkg.tar.xz b83a0c7e45055969da11df80ed15178bcda2ed4c0e40123633d9e968ad5e8862
 
-# Total: 9 package(s)
+# Total: 10 package(s)
