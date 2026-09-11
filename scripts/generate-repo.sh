@@ -21,7 +21,7 @@ count=0
 for pkg in "$REPO_DIR"/*.mypkg.tar.xz; do
     [ -f "$pkg" ] || continue
 
-    filename=$(basename "$pkg")
+    filename=$(basewname "$pkg")
     pkg_info=$(echo "$filename" | sed 's/\.mypkg\.tar\.xz$//')
 
     # Detect arch
@@ -29,7 +29,7 @@ for pkg in "$REPO_DIR"/*.mypkg.tar.xz; do
     [ -z "$arch" ] && arch="x86_64"
 
     # Strip arch suffix
-    name_ver_rev=$(echo "$pkg_info" | sed "s/\.${arch}$//")
+    name_ver_rev=$(echo "$pkg_info" | sed "s/[-.]${arch}$//")
 
     # Extract name (everything before first digit that starts a version)
     name=$(echo "$name_ver_rev" | sed 's/-[0-9][0-9.]*.*$//')

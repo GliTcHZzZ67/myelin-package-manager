@@ -1,14 +1,4 @@
 # NoExZOS Repository
-# Generated: Fri Sep 11 07:42:20 AM PDT 2026
+# Generated: Fri Sep 11 07:45:41 AM PDT 2026
 # Format: <name>-<version>-<rev> <arch> <url> <sha256>
 
-file-5.48-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/file-5.48-x86_64.mypkg.tar.xz 5a96e03b6633d0ca4f2f6d3ea7c9789c0acc82a607066920a94697d8784212e1
-grep-3.12-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/grep-3.12-x86_64.mypkg.tar.xz c9921445b272d4d87a572ea9cc87b7a080c989ce7e88c4b58910fab04cbbf970
-hello-2.12.3-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/hello-2.12.3-x86_64.mypkg.tar.xz 1542edacbbeca3a84c00947f5954d8d402a8acdc85a32c6884c395237343f77a
-less-704-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/less-704-x86_64.mypkg.tar.xz 6143fe5a322b711e40b2428b158be8766516f89331d1caa679f6a4a8370a9595
-nano-8.1-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/nano-8.1-x86_64.mypkg.tar.xz 31c088ea976a02151f3025e5e573a75429b3ebbf61a125093d8f7f86c4c2a384
-sed-4.10-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/sed-4.10-x86_64.mypkg.tar.xz 4c556cced59ced1ba6c3318f1e06619041f2a1a9c164f910e9b40c6c1880e03a
-tree-2.1.1-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/tree-2.1.1-x86_64.mypkg.tar.xz 046dba64d085cc354b133f4f5e0902fbc0c33b215e36b19068242a3f49811c20
-which-2.21-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/which-2.21-x86_64.mypkg.tar.xz b83a0c7e45055969da11df80ed15178bcda2ed4c0e40123633d9e968ad5e8862
-
-# Total: 8 package(s)
