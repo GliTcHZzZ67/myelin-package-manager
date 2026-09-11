@@ -1,5 +1,7 @@
 # NoExZOS Repository
-# Generated: initial
+# Generated: Fri Sep 11 07:16:58 AM PDT 2026
 # Format: <name>-<version>-<rev> <arch> <url> <sha256>
 
-# Total: 0 package(s)
+hello-2.12.3-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/hello-2.12.3-x86_64.mypkg.tar.xz 1542edacbbeca3a84c00947f5954d8d402a8acdc85a32c6884c395237343f77a
+
+# Total: 1 package(s)
