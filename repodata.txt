@@ -1,8 +1,10 @@
 # NoExZOS Repository
-# Generated: Fri Sep 11 07:34:17 AM PDT 2026
+# Generated: Fri Sep 11 07:39:47 AM PDT 2026
 # Format: <name>-<version>-<rev> <arch> <url> <sha256>
 
 hello-2.12.3-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/hello-2.12.3-x86_64.mypkg.tar.xz 1542edacbbeca3a84c00947f5954d8d402a8acdc85a32c6884c395237343f77a
 nano-8.1-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/nano-8.1-x86_64.mypkg.tar.xz 31c088ea976a02151f3025e5e573a75429b3ebbf61a125093d8f7f86c4c2a384
+tree-2.1.1-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/tree-2.1.1-x86_64.mypkg.tar.xz 046dba64d085cc354b133f4f5e0902fbc0c33b215e36b19068242a3f49811c20
+which-2.21-x86_64 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/which-2.21-x86_64.mypkg.tar.xz b83a0c7e45055969da11df80ed15178bcda2ed4c0e40123633d9e968ad5e8862
 
-# Total: 2 package(s)
+# Total: 4 package(s)
