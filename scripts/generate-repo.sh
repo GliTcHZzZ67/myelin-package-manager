@@ -18,14 +18,17 @@ BASE_URL="https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH
 } > "$OUTPUT"
 
 count=0
-for pkg in "$REPO_DIR"/*.mypkg.tar.xz; do
+for pkg in "$REPO_DIR"/*.mypkg.tar.*; do
     [ -f "$pkg" ] || continue
-
     filename=$(basename "$pkg")
-    # Remove .mypkg.tar.xz suffix
-    base="${filename%.mypkg.tar.xz}"
 
-    # Detect arch suffix: x86_64, aarch64, i686
+    case "$filename" in
+        *.mypkg.tar.zst) base="${filename%.mypkg.tar.zst}" ;;
+        *.mypkg.tar.xz)  base="${filename%.mypkg.tar.xz}" ;;
+        *.mypkg.tar.gz)  base="${filename%.mypkg.tar.gz}" ;;
+        *) continue ;;
+    esac
+
     arch=""
     for a in x86_64 aarch64 i686 armv7h; do
         case "$base" in
@@ -34,12 +37,9 @@ for pkg in "$REPO_DIR"/*.mypkg.tar.xz; do
     done
     [ -z "$arch" ] && arch="x86_64"
 
-    # base now: name-version (e.g., "hello-2.12.3")
-    # Extract name (before first digit-dot pattern)
     name=$(echo "$base" | sed -E 's/-[0-9][0-9.]*.*$//')
     version_part=$(echo "$base" | sed "s/^${name}-//")
 
-    # Add -1 revision if not present
     if echo "$version_part" | grep -q -- '-'; then
         version="$version_part"
     else
