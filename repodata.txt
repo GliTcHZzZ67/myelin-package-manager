@@ -1,16 +1,18 @@
 # NoExZOS Repository
-# Generated: Fri Sep 11 08:12:32 AM PDT 2026
-# Format: <name>-<version>-<rev> <arch> <url> <sha256>
+# Generated: Fri Sep 11 06:08:38 PM PDT 2026
+# Format: <name>-<version>-<rev> <arch> <url> <sha256> <deps>
 
-curl-8.15.0-py x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/curl-8.15.0-py-x86_64.mypkg.tar.zst bed37960991fd9de843b3bb79fe25933dc0430c45d86517dbb25a31802676f47
-file-5.48-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/file-5.48-x86_64.mypkg.tar.zst 9f305f863d278b3009b14425767ae4340d1a53373b077c70dacca8650ce707bf
-grep-3.12-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/grep-3.12-x86_64.mypkg.tar.zst 198b599f96373e4f5b1c0fbac0d0e570d1b3cb88f9ab422e51d1bc315def1a2b
-hello-2.12.3-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/hello-2.12.3-x86_64.mypkg.tar.zst da20beb64271172361f8aeafb179d13a076c667cb65a6b08089be9181b368cc2
-htop-3.4.0-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/htop-3.4.0-x86_64.mypkg.tar.zst c7c7e247ea0e7f825d2ee323a32697efab122104fa5e9bddca3f5c5d761e1265
-less-704-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/less-704-x86_64.mypkg.tar.zst ce88a06b77e683ae07f922eee4940cec13f4b8dae0281081e6f10ceb22dbde9a
-nano-8.1-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/nano-8.1-x86_64.mypkg.tar.zst 58bb413a736b5291cc7ec0447aa224c3ee9829361c3b9ef7ff47b564559f6c56
-sed-4.10-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/sed-4.10-x86_64.mypkg.tar.zst 23079d1be97a800044fa4bbfde44bc28d95b6c9f54b15abff2ea2f8b33d3c8a4
-tree-2.1.1-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/tree-2.1.1-x86_64.mypkg.tar.zst 8942eb5d01fda8dbbb6203559d412f7b9f2fd775d1b0620645187c2b126d42e1
-which-2.21-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/which-2.21-x86_64.mypkg.tar.zst 4d1b8c90c40ccadb04f545e03b8fc9eefe89da67366e71663fcaf10bc37df28a
+curl-8.15.0-py x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/curl-8.15.0-py-x86_64.mypkg.tar.zst 078384aff304868057952b31dea7532cb6bb726e7e8e52fa7541ffb9b5e18734 
+file-5.48-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/file-5.48-x86_64.mypkg.tar.zst 9f305f863d278b3009b14425767ae4340d1a53373b077c70dacca8650ce707bf 
+grep-3.12-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/grep-3.12-x86_64.mypkg.tar.zst 198b599f96373e4f5b1c0fbac0d0e570d1b3cb88f9ab422e51d1bc315def1a2b 
+hello-2.12.3-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/hello-2.12.3-x86_64.mypkg.tar.zst da20beb64271172361f8aeafb179d13a076c667cb65a6b08089be9181b368cc2 
+htop-3.4.0-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/htop-3.4.0-x86_64.mypkg.tar.zst 3e093f7a3f18009af65a721d01990d3f850a571bca6359ea6dbd3a9e6f97d880 ncurses,libcap
+less-704-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/less-704-x86_64.mypkg.tar.zst ce88a06b77e683ae07f922eee4940cec13f4b8dae0281081e6f10ceb22dbde9a 
+libcap-2.78-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/libcap-2.78-x86_64.mypkg.tar.zst aec1d6a61eb9feecfee80057f365042511b229e788f7fc42ca2c879403114cbd 
+nano-8.1-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/nano-8.1-x86_64.mypkg.tar.zst 58bb413a736b5291cc7ec0447aa224c3ee9829361c3b9ef7ff47b564559f6c56 
+ncurses-6.6-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/ncurses-6.6-x86_64.mypkg.tar.zst 7c578eee31b78cc2dd69b5b9c90de5de5d2643202bd9d9a9fa610485cfd79fd5 
+sed-4.10-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/sed-4.10-x86_64.mypkg.tar.zst 23079d1be97a800044fa4bbfde44bc28d95b6c9f54b15abff2ea2f8b33d3c8a4 
+tree-2.1.1-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/tree-2.1.1-x86_64.mypkg.tar.zst 8942eb5d01fda8dbbb6203559d412f7b9f2fd775d1b0620645187c2b126d42e1 
+which-2.21-1 x86_64 https://raw.githubusercontent.com/GliTcHZzZ67/myelin-package-manager/main/x86_64/which-2.21-x86_64.mypkg.tar.zst 4d1b8c90c40ccadb04f545e03b8fc9eefe89da67366e71663fcaf10bc37df28a 
 
-# Total: 10 package(s)
+# Total: 12 package(s)

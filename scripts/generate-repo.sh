@@ -1,6 +1,4 @@
 #!/bin/bash
-# generate-repo.sh - Regenerate repodata.txt from x86_64/ packages
-
 set -e
 
 REPO_DIR="x86_64"
@@ -13,7 +11,7 @@ BASE_URL="https://raw.githubusercontent.com/${GITHUB_USER}/${REPO_NAME}/${BRANCH
 {
     echo "# NoExZOS Repository"
     echo "# Generated: $(date)"
-    echo "# Format: <name>-<version>-<rev> <arch> <url> <sha256>"
+    echo "# Format: <name>-<version>-<rev> <arch> <url> <sha256> <deps>"
     echo ""
 } > "$OUTPUT"
 
@@ -46,10 +44,14 @@ for pkg in "$REPO_DIR"/*.mypkg.tar.*; do
         version="${version_part}-1"
     fi
 
+    # Extract deps from .PKGINFO inside tarball
+    deps=$(tar -xOf "$pkg" .PKGINFO 2>/dev/null | grep "^deps=" | cut -d= -f2 | tr ' ' ',' | sed 's/^,//;s/,$//')
+    [ -z "$deps" ] && deps=""
+
     sha256=$(sha256sum "$pkg" | cut -d' ' -f1)
     url="$BASE_URL/$filename"
 
-    echo "$name-$version $arch $url $sha256" >> "$OUTPUT"
+    echo "$name-$version $arch $url $sha256 $deps" >> "$OUTPUT"
     count=$((count + 1))
 done
 
